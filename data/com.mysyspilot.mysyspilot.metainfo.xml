@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.mysyspilot.mysyspilot</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <name>MySysPilot</name>
+  <summary>System monitor, cleaner, disk utility and data recovery</summary>
+  <developer id="com.mysyspilot">
+    <name>Gus Salazar</name>
+  </developer>
+  <description>
+    <p>MySysPilot is a local dashboard served on 127.0.0.1 only. It combines system monitoring, process, service and startup management, a system cleaner, package uninstaller, a disk utility with backup and restore, data recovery, Docker administration, a duplicate finder and an internet speed test.</p>
+    <p>Privileged actions are authorized per action through polkit.</p>
+  </description>
+  <launchable type="desktop-id">mysyspilot.desktop</launchable>
+  <categories>
+    <category>System</category>
+    <category>Monitor</category>
+  </categories>
+  <provides>
+    <binary>mysyspilot</binary>
+  </provides>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.4.1" date="2026-10-17"/>
+    <release version="1.4" date="2026-10-17"/>
+  </releases>
+</component>

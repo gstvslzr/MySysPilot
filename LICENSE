@@ -1,0 +1,10 @@
+MySysPilot
+Copyright (c) 2026 Gus Salazar. All rights reserved.
+
+Proprietary software. Provided as-is, without warranty of any kind, express
+or implied. No license to copy, modify or redistribute is granted except as
+expressly permitted in writing by the copyright holder.
+
+The file data/com.mysyspilot.mysyspilot.metainfo.xml is released under
+CC0-1.0. Feature set inspired by Stacer (GPL-3.0) and GNOME Disks; no code
+from either project is included.

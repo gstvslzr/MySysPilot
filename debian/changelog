@@ -1,0 +1,34 @@
+mysyspilot (1.4.1) noble; urgency=medium
+
+  * Packaging brought in line with Debian Policy / lintian:
+    - real source package (debhelper 13, 3.0 native) built from src/.
+    - program moved to /usr/share/mysyspilot, root helper to
+      /usr/libexec/mysyspilot (FHS 3.0); polkit policy updated.
+    - dropped dependency on essential util-linux; md5sums generated.
+    - desktop and icon caches handled by dpkg triggers (no maintscripts).
+    - AppStream metainfo added; manual page completed.
+  * Disk helper is looked up in /usr/libexec first, /usr/lib as fallback.
+
+ -- Gus Salazar <gus.salazar66@gmail.com>  Sat, 17 Oct 2026 20:03:49 -0400
+
+mysyspilot (1.4) noble; urgency=medium
+
+  * Docker: Examples & Templates (ABC basics, Dockerfile and Compose
+    templates with generated secrets, tutorial links).
+  * Docker: image build action with job progress.
+
+ -- Gus Salazar <gus.salazar66@gmail.com>  Sat, 17 Oct 2026 18:40:00 -0400
+
+mysyspilot (1.3.1) noble; urgency=medium
+
+  * Data Recovery: loading status with progress bar, error and Retry.
+  * Write partition table: simple confirmation.
+  * Single instance: relaunch reopens the running window.
+
+ -- Gus Salazar <gus.salazar66@gmail.com>  Sat, 17 Oct 2026 12:30:00 -0400
+
+mysyspilot (1.3) noble; urgency=medium
+
+  * Progress tracking for every disk operation; drive health badges.
+
+ -- Gus Salazar <gus.salazar66@gmail.com>  Sat, 17 Oct 2026 09:00:00 -0400

@@ -1,0 +1,3 @@
+#!/bin/sh
+# MySysPilot launcher
+exec /usr/bin/python3 /usr/share/mysyspilot/mysyspilot.py "$@"

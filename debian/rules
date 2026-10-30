@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+export PYTHONDONTWRITEBYTECODE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	python3 src/build.py build/mysyspilot.py
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	python3 -c "import ast,sys; ast.parse(open('build/mysyspilot.py',encoding='utf-8').read())"
+	python3 build/mysyspilot.py --help >/dev/null
+endif
+
+override_dh_auto_clean:
+	rm -rf build
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod 0755 debian/mysyspilot/usr/libexec/mysyspilot/msp-diskhelper debian/mysyspilot/usr/bin/mysyspilot
+	chmod 0644 debian/mysyspilot/usr/share/mysyspilot/mysyspilot.py

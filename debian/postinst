@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+# Versions before 1.4.1 installed the program under /usr/lib/mysyspilot.
+# dpkg removes the old files; drop a leftover Python cache directory that
+# dpkg does not own, then the directory itself if it is empty.
+if [ "$1" = "configure" ] && [ -n "$2" ] && dpkg --compare-versions "$2" lt "1.4.1"; then
+    rm -rf /usr/lib/mysyspilot/__pycache__
+    rmdir --ignore-fail-on-non-empty /usr/lib/mysyspilot 2>/dev/null || true
+fi
+
+#DEBHELPER#
+
+exit 0

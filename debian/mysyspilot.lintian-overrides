@@ -1,3 +1,0 @@
-# policykit-1 is kept as an alternative so the package still installs its
-# recommendations on Ubuntu 22.04, where pkexec is not a separate package.
-mysyspilot: ored-depends-on-obsolete-package Recommends: policykit-1 => polkitd and optionally pkexec

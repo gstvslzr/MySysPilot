@@ -1,0 +1,19 @@
+{
+  "name": "",
+  "owner": "",
+  "description": "System Information Dashboard",
+  "license": "MIT",
+  "author": "Gustavo Salazar",
+  "visibility": "private",
+  "version": "1.5",
+  "topics": [
+    "SysInfo"
+  ],
+  "release_assets": [],
+  "security_contact": "",
+  "ai_assisted": true,
+  "spdx_headers": true,
+  "online_lookup": true,
+  "api_url": "",
+  "docs_strict": false
+}

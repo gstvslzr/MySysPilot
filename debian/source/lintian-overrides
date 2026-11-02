@@ -1,5 +1,0 @@
-# src/ui.html is the hand-written, preferred form of modification of the web
-# UI (HTML, CSS and JavaScript in one file); it is not minified or generated.
-# Some lines are long because of dense hand formatting of HTML templates.
-mysyspilot source: source-is-missing [src/ui.html]
-mysyspilot source: very-long-line-length-in-source-file * [src/ui.html:*]

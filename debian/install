@@ -1,7 +1,0 @@
-build/mysyspilot.py usr/share/mysyspilot
-data/mysyspilot usr/bin
-data/msp-diskhelper usr/libexec/mysyspilot
-data/mysyspilot.desktop usr/share/applications
-data/mysyspilot.svg usr/share/icons/hicolor/scalable/apps
-data/com.mysyspilot.diskhelper.policy usr/share/polkit-1/actions
-data/com.mysyspilot.mysyspilot.metainfo.xml usr/share/metainfo
